@@ -1,6 +1,6 @@
 select
     *
 from
-    dbt_jnadal_dev.dbt_jnadal.restaurants
+   {{source('restaurants','restaurants')}}
 where
     open_on_sunday

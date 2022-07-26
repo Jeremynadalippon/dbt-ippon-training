@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: restaurants 
+    database : dbt_training_dev
+    schema: source
+    tables:
+      - name: restaurants
+      - name: orders
