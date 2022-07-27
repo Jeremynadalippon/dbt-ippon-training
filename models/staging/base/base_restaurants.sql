@@ -1,4 +1,4 @@
-select 
+select distinct
     identifier
     , name
     , address
