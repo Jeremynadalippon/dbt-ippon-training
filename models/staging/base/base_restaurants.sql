@@ -1,6 +1,6 @@
-select distinct
+select
     identifier
     , name
     , address
 from 
-    {{source('restaurants', 'restaurants')}}
+    {{ source('restaurants', 'restaurants') }}
