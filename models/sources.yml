@@ -5,5 +5,28 @@ sources:
     database : dbt_training_dev
     schema: source
     tables:
-      - name: restaurants
       - name: orders
+        description : Raw orders data
+        columns:
+          - name: identifier
+            description: Primary key for orders
+            tests:
+              - unique
+              - not_null
+          - name: payment_method
+            description: "{{doc('order_payment')}}"
+            tests:
+              - accepted_values:
+                  values:
+                    - card
+                    - cash
+                    - cheque
+                    - meal_ticket
+      - name: restaurants
+        description: Raw restaurants data
+        columns:
+          - name: identifier
+            description: Primary key for restaurants
+            tests:
+              - unique
+              - not_null
