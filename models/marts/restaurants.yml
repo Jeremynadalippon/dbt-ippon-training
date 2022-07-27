@@ -1,6 +1,11 @@
 version: 2
 
 models:
+  - name: restaurants__amount_by_payment_type 
+    description: Table showing amount for each payment method
+    columns:
+      - name: name
+        description: Name of the restaurant 
   - name: restaurants__turnover_ordered 
     description: Table showing the ranking of restaurants by turnover
     columns:
