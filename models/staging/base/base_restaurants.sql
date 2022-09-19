@@ -2,5 +2,5 @@ select
     identifier
     , name
     , address
-from 
+from
     {{ source('restaurants', 'restaurants') }}
