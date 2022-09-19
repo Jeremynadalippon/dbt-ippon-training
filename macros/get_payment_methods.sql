@@ -24,6 +24,6 @@
 
 {% macro get_payment_methods() %}
 
-{{ return(get_column_values('payment_method', source('restaurants','orders'))) }}
+{{ return(get_column_values('payment_method', source('source','orders'))) }}
 
 {% endmacro %}
