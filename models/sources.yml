@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: restaurants 
+  - name: sources 
     database : dbt_training_dev
     schema: source
     tables:

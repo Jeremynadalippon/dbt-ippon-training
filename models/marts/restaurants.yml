@@ -20,3 +20,20 @@ models:
         description: Address of the restaurants
       - name: turnover
         description: Turnover made by the restaurants 
+  - name: restaurants__benefit_orders_hourly 
+    description: Table showing the nb of orders, turnover, profit for each dish for each hour
+    columns:
+      - name: identifier
+        description: Primary key for dish
+        tests:
+          - not_null
+      - name: name
+        description: Name of the dish
+      - name: nb_ordered
+        description: Number of times the dish has been ordered
+      - name: global_turnover
+        description: Turnover made for this hour 
+      - name: global_profit
+        description: Profit made fot this hour
+      - name: hour
+        description: Hour studied

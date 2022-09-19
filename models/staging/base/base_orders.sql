@@ -6,4 +6,4 @@ select distinct
     , amount
     , created_at
 from 
-    {{ source('restaurants', 'orders') }}
+    {{ mockable_source('sources', 'orders','sample_orders') }}
