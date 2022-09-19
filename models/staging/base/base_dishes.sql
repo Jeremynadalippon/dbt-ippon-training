@@ -5,4 +5,4 @@ select
     , production_cost
     , type
 from 
-    {{ mockable_source('source', 'dishes','sample_dishes') }}
+    {{ mockable_source('sources', 'dishes','sample_dishes') }}

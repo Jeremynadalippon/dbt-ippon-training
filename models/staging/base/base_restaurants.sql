@@ -3,4 +3,4 @@ select
     , name
     , address
 from 
-    {{ mockable_source('source', 'restaurants','sample_restaurants') }}
+    {{ mockable_source('sources', 'restaurants','sample_restaurants') }}
