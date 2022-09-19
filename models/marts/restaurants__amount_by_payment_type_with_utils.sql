@@ -1,5 +1,5 @@
 {%- set payment_methods = dbt_utils.get_column_values(    
-table=source('restaurants','orders')    
+table=source('sources','orders')    
     , column='payment_method') -%}
 
 select

@@ -3,4 +3,4 @@ select
     , name
     , address
 from 
-    {{ source('restaurants', 'restaurants') }}
+    {{ source('sources', 'restaurants') }}

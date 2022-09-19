@@ -5,4 +5,4 @@ select
     , turnover::number              as turnover
 from 
     {{ref('stg_restaurants__turnover_ordered')}}
-limit {{ vars('nb_restaurants_to_show') }}
+limit {{ var('nb_restaurants_to_show') }}

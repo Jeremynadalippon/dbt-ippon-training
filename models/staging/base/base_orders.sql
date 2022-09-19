@@ -5,4 +5,4 @@ select distinct
     , amount
     , created_at
 from 
-    {{ source('restaurants', 'orders') }}
+    {{ source('sources', 'orders') }}
