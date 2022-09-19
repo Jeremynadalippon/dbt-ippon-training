@@ -30,3 +30,11 @@ sources:
             tests:
               - unique
               - not_null
+      - name: dishes
+        description: Raw dishes data
+        columns:
+          - name: identifier
+            description: Primary key for dishes
+            tests:
+              - unique
+              - not_null
