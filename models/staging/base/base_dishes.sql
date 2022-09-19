@@ -5,4 +5,4 @@ select
     , production_cost
     , type
 from 
-    {{ source('restaurants', 'dishes') }}
+    {{ source('sources', 'dishes') }}
