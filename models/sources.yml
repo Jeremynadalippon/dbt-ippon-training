@@ -38,3 +38,5 @@ sources:
             tests:
               - unique
               - not_null
+      - name: stream_orders
+        description: Stream put on the orders table

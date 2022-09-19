@@ -6,4 +6,4 @@ select distinct
     , amount
     , created_at
 from 
-    {{ mockable_source('sources', 'orders','sample_orders') }}
+    {{ from_stream("sources", "stream_orders", "orders", "sample_orders") }}
