@@ -4,4 +4,4 @@ select
     , address::string               as address
     , turnover::number              as turnover
 from 
-    {{ref('stg_ranking_restaurants')}}
+    {{ ref('stg_ranking_restaurants') }}
