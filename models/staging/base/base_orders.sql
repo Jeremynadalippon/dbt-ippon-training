@@ -1,6 +1,6 @@
 select
     identifier
     , restaurant_identifier
-    , total_price
+    , amount
 from
     {{ source('sources', 'orders') }}
