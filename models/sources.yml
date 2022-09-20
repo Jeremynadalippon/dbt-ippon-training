@@ -2,7 +2,6 @@ version: 2
 
 sources:
   - name: sources 
-    database : dbt_training_dev
     schema: source
     tables:
       - name: orders
