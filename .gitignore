@@ -2,3 +2,6 @@
 target/
 dbt_packages/
 logs/
+venv/
+.sqlfluff
+.sqlfluffignore

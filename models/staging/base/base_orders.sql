@@ -1,6 +1,6 @@
-select 
+select
     identifier
     , restaurant_identifier
     , total_price
-from 
+from
     {{ source('sources', 'orders') }}

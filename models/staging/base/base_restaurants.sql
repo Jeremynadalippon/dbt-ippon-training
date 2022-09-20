@@ -1,6 +1,6 @@
-select 
+select
     identifier
     , name
     , address
-from 
+from
     {{ source('sources', 'restaurants') }}
