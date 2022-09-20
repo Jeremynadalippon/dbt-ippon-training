@@ -9,13 +9,13 @@ models:
   - name: restaurants__turnover_ordered 
     description: Table showing the ranking of restaurants by turnover
     columns:
-      - name: restaurant_identifier
-        description: Primary key for restaurants
+      - name: rank
+        description: Rank in term of turnover of the restaurant
+      - name: name
+        description: Name of the restaurants
         tests:
           - unique
           - not_null
-      - name: name
-        description: Name of the restaurants
       - name: address
         description: Address of the restaurants
       - name: turnover
