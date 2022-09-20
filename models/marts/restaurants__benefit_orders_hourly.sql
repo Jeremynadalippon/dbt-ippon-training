@@ -24,6 +24,6 @@ left join
         hour > (select max(hour) from {{ this }})
 {% endif %}
 group by
-  1
-  , 2
-  , 3
+    1
+    , 2
+    , 3
