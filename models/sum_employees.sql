@@ -1,4 +1,4 @@
 select
     sum(nb_employees) as sum_employees
 from
-    dbt_jnadal_dev.dbt_jnadal.restaurants
+    db_pfarey_dev.dbt_pfarey.restaurants

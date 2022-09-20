@@ -1,6 +1,6 @@
 select
     *
 from
-    dbt_jnadal_dev.dbt_jnadal.restaurants
+    db_pfarey_dev.dbt_pfarey.restaurants
 where
     open_on_sunday
