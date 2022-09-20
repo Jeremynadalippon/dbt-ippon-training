@@ -10,4 +10,3 @@ left join
 group by
     r.name
     , r.address
-
