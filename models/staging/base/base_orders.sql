@@ -4,5 +4,5 @@ select distinct
     , payment_method
     , amount
     , created_at
-from 
+from
     {{ source('sources', 'orders') }}
