@@ -1,6 +1,6 @@
 select
     *
 from
-   {{source('restaurants','restaurants')}}
+    {{ source('sources','restaurants') }}
 where
-    open_on_sunday
+    open_on_sunday::boolean

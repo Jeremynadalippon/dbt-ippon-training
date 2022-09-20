@@ -1,8 +1,8 @@
 version: 2
 
 sources:
-  - name: restaurants 
-    database : dbt_training_dev
+  - name: sources 
+    database : db_pfarey_dev
     schema: source
     tables:
       - name: restaurants
