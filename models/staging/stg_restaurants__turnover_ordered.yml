@@ -6,6 +6,4 @@ models:
     columns:
       - name: restaurant_identifier
         description: Primary key for restaurants
-        tests:
-          - unique
-          - not_null
+

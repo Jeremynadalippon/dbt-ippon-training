@@ -8,4 +8,5 @@ left join
     {{ ref('base_orders') }} as o
         on o.restaurant_identifier = r.identifier
 group by
-    1, 2
+    1
+    , 2
