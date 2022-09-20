@@ -2,7 +2,6 @@ version: 2
 
 sources:
   - name: sources 
-    database : db_pfarey_dev
     schema: source
     tables:
       - name: restaurants
