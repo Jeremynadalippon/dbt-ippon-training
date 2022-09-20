@@ -4,5 +4,5 @@ select
     , selling_price
     , production_cost
     , type
-from 
+from
     {{ source('sources', 'dishes') }}
