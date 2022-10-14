@@ -21,7 +21,7 @@ left join
 {% if is_incremental() %}
     -- this filter will only be applied on an incremental run
     where
-        hour > (select max(hour) from {{ this }})
+        hour >= (select max(hour) from {{ this }})
 {% endif %}
 group by
     1
