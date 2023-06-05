@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: turnover
+    description: Cette table contiens le chiffre d'affaire par restau
+
+    columns:
+      - name: RESTAURANT_IDENTIFIER
+        description: l'identifiant de restaurant
+        tests:
+          - unique
+
+      - name: total
+        description: Le chiffre d'affaire
+        tests:
+          - not_null
