@@ -1,6 +1,6 @@
 WITH sales_data AS (
    SELECT name, SUM(nb_employees) AS total_quantity
-   FROM restaurants
+   FROM {{ref("restaurants")}}
    GROUP BY name
 )
 
