@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: turnover
-    description: Cette table contiens le chiffre d'affaire par restau
+    description: Cette table contiens le chiffre d'affaire par restaurant
 
     columns:
       - name: RESTAURANT_IDENTIFIER

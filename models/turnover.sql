@@ -1,7 +1,7 @@
 
 WITH sales_data AS (
    SELECT RESTAURANT_IDENTIFIER, SUM(AMOUNT) AS total
-   FROM {{source("jaffle_shop", "ORDERS")}}
+   FROM {{mockable_source("jaffle_shop", "ORDERS")}}
    GROUP BY RESTAURANT_IDENTIFIER
 )
 
