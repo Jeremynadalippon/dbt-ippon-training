@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: sources 
-    database : dbt_training_dev
+    database : jnadal_db
     schema: source
     tables:
       - name: orders
@@ -38,3 +38,4 @@ sources:
             tests:
               - unique
               - not_null
+      - name: fuzzy_orders_name

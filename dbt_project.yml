@@ -43,3 +43,9 @@ models:
       +materialized: table
     staging:
       +materialized: ephemeral
+
+seeds:
+  dbt_ippon_training:
+    schema: source
+    # to allow for lowercase
+    +quote_columns: true
