@@ -10,7 +10,7 @@ with base as (
 
 , add_fake_id as (
     select
-        row_number() as fake_id
+        row_number() over (order by 1) as fake_id
         , *
     from
         base
@@ -18,10 +18,11 @@ with base as (
 
 select
     b.fake_id
-    , n.value as dish_name
+    , n.value as dish_user_input
     , payment_method
     , amount
     , created_at
+    , dishes_ids
 from
     add_fake_id as b
 , lateral flatten(input => b.dishes_names) as n

@@ -16,5 +16,5 @@ def model(dbt, session):
             return None
     
     return  (dbt.ref("stg_flatten_fuzzy_names").to_pandas()
-                .assign( dish_user_input=lambda df: df.DISH_NAME.apply(custom_scorer) )
+                .assign( dish_name=lambda df: df.DISH_USER_INPUT.apply(custom_scorer) )
     )

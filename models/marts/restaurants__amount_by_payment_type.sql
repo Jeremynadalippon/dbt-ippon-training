@@ -1,5 +1,13 @@
 {%- set payment_methods = get_payment_methods() -%}
 
+with restaurants as (
+    select * from {{ ref('base_restaurants') }}
+)
+
+, orders as (
+    select * from {{ ref('base_orders') }}
+)
+
 select
     r.name
     , {%- for payment_method in payment_methods %}
@@ -7,8 +15,8 @@ select
         {%- if not loop.last %},{% endif -%}
     {% endfor %}
 from 
-    {{ ref('base_restaurants') }}   as r
+    restaurants as r
 left join
-    {{ ref('base_orders') }}        as o
+    orders as o
         on o.restaurant_identifier = r.identifier
 group by 1

@@ -38,4 +38,4 @@ sources:
             tests:
               - unique
               - not_null
-      - name: fuzzy_orders_name
+      - name: fuzzy_orders
