@@ -1,6 +1,8 @@
-
+.env
 target/
 dbt_packages/
 logs/
 generator/
 venv/
+.venv/
+.dbt_profiles/*
