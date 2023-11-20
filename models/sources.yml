@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: sources 
-    database : jnadal_db
+    database : db_dbt_jnadal_dev
     schema: source
     tables:
       - name: orders
