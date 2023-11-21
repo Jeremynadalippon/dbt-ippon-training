@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 identifier,name,selling_price,production_cost,type
 3,Demi peche,4,2.5,boisson
 5,Choucroute,12,9,plat
@@ -5,4 +6,13 @@ identifier,name,selling_price,production_cost,type
 14,Boudin blanc sauce aux girolles et marrons,7,6,entree
 18,Tarte au citron,6,4,dessert
 22,Maxi burger frite,14,7,plat
+=======
+IDENTIFIER,NAME,SELLING_PRICE,PRODUCTION_COST,TYPE
+3,Demi peche,4,2.5,boisson
+5,Choucroute,12,9,plat
+9,Flammkueche au munster,10,5,plat
+14,Boudin blanc sauce aux girolles et marrons,7,6,entree
+18,Tarte au citron,6,4,dessert
+22,Maxi burger frite,14,7,plat
+>>>>>>> aba6c034bbc8e23fa67663b6e4b1e0c67e8614d1
 23,Carbonade flamande,10,6,plat
