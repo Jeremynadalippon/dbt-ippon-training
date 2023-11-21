@@ -1,4 +1,4 @@
-IDENTIFIER,NAME,SELLING_PRICE,PRODUCTION_COST,TYPE
+identifier,name,selling_price,production_cost,type
 3,Demi peche,4,2.5,boisson
 5,Choucroute,12,9,plat
 9,Flammkueche au munster,10,5,plat
