@@ -1,0 +1,9 @@
+<<<<<<< HEAD
+identifier,name,address,nb_employees,open_on_sundays
+3,Chez tjumeaux,Avenue de la Grande Armee - Paris,2,true
+7,Chez siribarne,Allees de Tourny - Bordeaux,10,true
+=======
+IDENTIFIER,NAME,ADDRESS,NB_EMPLOYEES,OPEN_ON_SUNDAY
+3,Chez tjumeaux,Avenue de la Grande Armee - Paris,2,true
+7,Chez siribarne,Allees de Tourny - Bordeaux,10,true
+>>>>>>> aba6c034bbc8e23fa67663b6e4b1e0c67e8614d1
