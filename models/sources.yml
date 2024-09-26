@@ -1,0 +1,19 @@
+version: 1
+
+sources:
+  - name: source
+    schema: source  
+    tables:
+      - name: restaurants
+
+      - name: orders
+        columns:
+            - name: identifier
+              description: TODO
+              tests:
+                - unique
+                - not_null
+
+      - name: fuzzy_orders
+
+      - name: dishes

@@ -1,0 +1,20 @@
+version: 1
+
+models:
+  - name: restaurants__turnover_ordered
+    description: TODO
+    tests:
+      - dbt_utils.equality:
+          compare_model: ref('expect_restaurants__turnover_ordered')
+          tags: ['unit_testing']
+
+    columns:
+      - name: name
+        description: TODO
+        tests:
+          - unique
+
+      - name: turnover
+        description: TODO
+        tests:
+          - positif
