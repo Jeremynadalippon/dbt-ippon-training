@@ -1,4 +1,17 @@
 {
+  "audemars": {
+    "1": "dbtBase",
+    "2": "modularity",
+    "3": "docTest",
+    "4": "jinja1",
+    "5": "buffer",
+    "6": "integrationTestsDeployment",
+    "7": "incremental",
+    "8": "commonMonitor",
+    "9": "hooksExports",
+    "10": "python",
+    "11": "deeper"
+  },
   "complete": {
     "1": "dbtBase",
     "2": "modularity",
