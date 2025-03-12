@@ -1,0 +1,26 @@
+sources:
+  - name: restaurant_sources
+    database: db_dbt_jnadal_dev
+    schema: source
+    tables:
+      - name: dishes
+      - name: restaurants
+      - name: orders
+        description: Orders placed by customers
+        columns: 
+          - name: identifier
+            data_type: string
+            description: Unique identifier of the order
+            data_tests:
+              - unique
+              - not_null
+          - name: payment_method
+            data_type: string
+            description: "{{doc('order_payment')}}"
+            data_tests:
+              - accepted_values:
+                  values:
+                    - card
+                    - cash
+                    - cheque
+                    - meal_ticket
