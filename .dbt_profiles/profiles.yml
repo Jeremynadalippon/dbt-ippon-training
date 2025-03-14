@@ -31,3 +31,18 @@ dbt_ippon_training:
       user: "{{env_var('DBT_USERNAME_PROD')}}"
       password: "{{env_var('DBT_ENV_SECRET_PASSWORD')}}"
       warehouse: "{{env_var('DBT_WH_NAME_PROD')}}"
+
+
+
+elementary:
+  outputs:
+    default:
+      type: "snowflake"
+      account: "{{env_var('DBT_ENV_SECRET_ACCOUNT_NAME')}}"
+      user: "dbt_adamakane_prod"
+      password: "{{env_var('DBT_ENV_SECRET_PASSWORD')}}"
+      role: "r_dbt_adamakane_prod"
+      warehouse: "wh_dbt_adamakane_prod"
+      database: "db_dbt_adamakane_prod"
+      schema: elementary
+      threads: 4

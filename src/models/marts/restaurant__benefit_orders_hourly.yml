@@ -1,0 +1,29 @@
+models:
+  - name: restaurant__benefit_orders_hourly
+    description: This table contains the benefit of the restaurant with the orders hourly
+    tests:
+      - dbt_utils.equality:
+          compare_model: ref('excpect_restaurant__benefit_orders_hourly')
+          tags: ['unit_testing']
+
+unit_tests: 
+  - name: test_group_and_sum_are_valid
+    description: "Check group and sum are valid"
+    model: restaurant__benefit_orders_hourly
+    overrides:
+      macros:
+        is_incremental: false
+    given:
+      - input: ref('base_dishes')
+        rows:
+          - {identifier: 1}
+          - {identifier: 2}
+      - input: ref('stg_orders__dishes_flattened')
+        rows:
+          - {dishes_id: 1}
+          - {dishes_id: 1}
+    expect:
+      rows:
+        - {identifier: 1, nb_ordered: 2}
+       
+    
