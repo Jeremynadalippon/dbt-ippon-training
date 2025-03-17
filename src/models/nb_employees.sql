@@ -1,0 +1,1 @@
+select sum(nb_employees) as nb_employees from {{source('source','restaurants')}}

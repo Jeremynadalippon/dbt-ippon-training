@@ -1,0 +1,31 @@
+sources:
+  - name: source
+    database: |
+     {% if target.name == "prod" %}
+       "DB_DBT_ADAMAKANE_PROD"
+       {%else%} "DB_DBT_ADAMAKANE_DEV"
+     {%endif%}  
+    schema:   source
+    tables:
+      - name: orders
+        description: "This table contains all the orders"
+        columns:
+        - name: identifier
+          description: "This is a unique identifier for the eorder"
+          tests:
+           - unique:
+              config:
+                severity: warn
+
+           - not_null
+        - name: restaurant_identifier 
+          description: "This is a unique identifier for the restaurant"
+          tests:
+           - not_null
+        - name: amount
+          description: "This is the amount of the order"  
+          tests:
+           - not_null
+
+      - name: restaurants
+      - name: dishes

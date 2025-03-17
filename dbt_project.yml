@@ -18,6 +18,7 @@ test-paths: ["src/tests"]
 seed-paths: ["src/seeds"]
 macro-paths: ["src/macros"]
 snapshot-paths: ["src/snapshots"]
+docs-path: ["src/docs"]
 
 target-path: "target"  # directory which will store compiled SQL files
 clean-targets:         # directories to be removed by `dbt clean`
@@ -29,7 +30,23 @@ clean-targets:         # directories to be removed by `dbt clean`
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
 models:
+  elementary:
+    +schema: elementary
+
   dbt_ippon_training:
     # Config indicated by + and applies to all files under models/
     marts:
       +materialized: table
+      +schema: silver
+    staging:
+      #+materialized: ephemeral
+      
+seeds:
+  +schema: seed
+
+
+vars:
+  nb_restaurants_to_show: 3
+
+flags:
+  require_explicit_package_overrides_for_builtin_materializations: false

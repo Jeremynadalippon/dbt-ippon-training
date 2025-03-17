@@ -1,0 +1,23 @@
+models:
+  - name: restaurants__turnover_ordered
+    description: This table contains all the restaurants with their turnover ordered
+    columns:
+      - name: restaurant_identifier
+        description: This is a unique identifier for the restaurant
+        tests:
+          - not_null
+          - unique
+      - name: turnover
+        description: This is the turnover of the restaurant
+        tests:
+          - not_null
+          - test_value_is_positive:
+              severity: warn   # overrides
+      - name: name
+        description: This is the name of the restaurant
+        tests:
+          - not_null
+          - unique
+      - name: address
+        description: This is the address of the restaurant
+         
