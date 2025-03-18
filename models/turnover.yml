@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    database: DB_DBT_RKAISS_DEV  
+    schema: SOURCE  
+    tables:
+      - name: ORDERS
+      - name: RESTAURANTS
